@@ -1,20 +1,101 @@
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-
-  /*
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    /*
    * CSS image reference example.
    */
-  background-image: url('./images/bg-pattern.png');
+    ;
+}
+
+.search-form {
+    text-align: center;
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px 20px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.search-input,
+.load-button {
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 3px solid DeepSkyBlue;
+    outline: transparent;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+
+.search-input {
+    width: 600px;
+}
+
+.load-button {
+    cursor: pointer;
+}
+
+.gallery {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.gallery .item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+}
+
+.stats-item {
+    display: flex;
+    text-align: center;
+    margin: 10px 0px 20px 0px;
+}
+
+.stats-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.image-thumb {
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.material-icons.powderblue {
+    color: powderblue;
+}
+
+.material-icons {
+    margin-right: 10px;
+}
+
+.load-button.is-hidden {
+    display: none;
 }
