@@ -13,18 +13,18 @@ body {
     /*
    * CSS image reference example.
    */
-    ;
 }
 
-.search-form {
-    text-align: center;
-    max-width: 300px;
-    margin: 10px auto;
-    padding: 10px 20px;
+.material-icons.powderblue {
+    color: powderblue;
 }
 
-.form-group {
-    position: relative;
+.material-icons {
+    margin-right: 10px;
+}
+
+.load-button.is-hidden {
+    display: none;
 }
 
 .search-input,
@@ -38,6 +38,19 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: #fff;
+}
+
+.image-thumb {
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .search-input {
@@ -73,29 +86,4 @@ body {
 
 .stats-item:not(:last-child) {
     margin-right: 10px;
-}
-
-.image-thumb {
-    width: 350px;
-    height: 250px;
-    overflow: hidden;
-}
-
-.image {
-    display: block;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.material-icons.powderblue {
-    color: powderblue;
-}
-
-.material-icons {
-    margin-right: 10px;
-}
-
-.load-button.is-hidden {
-    display: none;
 }
