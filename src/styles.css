@@ -101,34 +101,3 @@ body {
 .load-button.is-hidden {
     display: none;
 }
-
-.load-button {
-    cursor: pointer;
-}
-
-.gallery {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    margin: 10px;
-}
-
-.gallery .item:not(:last-child) {
-    margin-right: 10px;
-}
-
-.stats {
-    display: flex;
-    justify-content: center;
-}
-
-.stats-item {
-    display: flex;
-    text-align: center;
-    margin: 10px 0px 20px 0px;
-}
-
-.stats-item:not(:last-child) {
-    margin-right: 10px;
-}
