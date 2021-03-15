@@ -1,6 +1,5 @@
 import refs from './refs.js'
-import imageCard from '../templates/image-card.hbs'
-//import imageCard from './templates/image-card.hbs'
+import imageCard from '../templates/image-handlebar.hbs'
 
 function updateImageMarkup(hits) {
     const markup = imageCard(hits);

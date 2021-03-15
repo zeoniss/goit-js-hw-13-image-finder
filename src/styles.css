@@ -13,7 +13,18 @@ body {
     /*
    * CSS image reference example.
    */
-    background-image: url('./images/bg-pattern.png');
+}
+
+.material-icons.powderblue {
+    color: powderblue;
+}
+
+.material-icons {
+    margin-right: 10px;
+}
+
+.load-button.is-hidden {
+    display: none;
 }
 
 .search-input,
@@ -27,6 +38,19 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: #fff;
+}
+
+.image-thumb {
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.image {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .search-input {
@@ -62,42 +86,4 @@ body {
 
 .stats-item:not(:last-child) {
     margin-right: 10px;
-}
-
-.image-thumb {
-    width: 350px;
-    height: 250px;
-    overflow: hidden;
-}
-
-.image {
-    display: block;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.material-icons.powderblue {
-    color: powderblue;
-}
-
-.material-icons {
-    margin-right: 10px;
-}
-
-
-/* .load-button {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 3px solid powderblue;
-  border-radius: 10px;
-  outline: transparent;
-  cursor: pointer;
-  padding:20px;
-  font-size: 20px;
-} */
-
-.load-button.is-hidden {
-    display: none;
 }
