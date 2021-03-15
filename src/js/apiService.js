@@ -3,7 +3,7 @@ import axios from 'axios';
 axios.defaults.baseURL = 'https://pixabay.com/api/';
 
 export default {
-    key: '20448732-c2abd7c565e4d9afcf8e6024e',
+    key: '20318294-75f546a505c22d4a6a744da7a',
     perPage: 12,
     pageNumber: 1,
     searchQuery: '',
