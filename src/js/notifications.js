@@ -11,7 +11,7 @@ function noImagesMessage() {
     info({
         title: 'Sorry',
         text: `We haven't images matching your request`,
-        delay: 1000,
+        delay: 2000,
     });
 }
 
@@ -19,7 +19,7 @@ function noMoreImagesMessage() {
     alert({
         title: `That's all`,
         text: `We don't have any pictures matching your request`,
-        delay: 1000,
+        delay: 2000,
     });
 }
 

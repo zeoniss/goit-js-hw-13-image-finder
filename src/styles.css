@@ -13,18 +13,7 @@ body {
     /*
    * CSS image reference example.
    */
-}
-
-.material-icons.powderblue {
-    color: powderblue;
-}
-
-.material-icons {
-    margin-right: 10px;
-}
-
-.load-button.is-hidden {
-    display: none;
+    background-image: url('./images/bg-pattern.png');
 }
 
 .search-input,
@@ -40,6 +29,41 @@ body {
     background-color: #fff;
 }
 
+.search-input {
+    width: 600px;
+}
+
+.load-button {
+    cursor: pointer;
+}
+
+.gallery {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.gallery .item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+}
+
+.stats-item {
+    display: flex;
+    text-align: center;
+    margin: 10px 0px 20px 0px;
+}
+
+.stats-item:not(:last-child) {
+    margin-right: 10px;
+}
+
 .image-thumb {
     width: 350px;
     height: 250px;
@@ -53,8 +77,29 @@ body {
     object-fit: cover;
 }
 
-.search-input {
-    width: 600px;
+.material-icons.powderblue {
+    color: powderblue;
+}
+
+.material-icons {
+    margin-right: 10px;
+}
+
+
+/* .load-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid powderblue;
+  border-radius: 10px;
+  outline: transparent;
+  cursor: pointer;
+  padding:20px;
+  font-size: 20px;
+} */
+
+.load-button.is-hidden {
+    display: none;
 }
 
 .load-button {
