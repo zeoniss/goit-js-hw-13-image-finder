@@ -1,8 +1,8 @@
 import refs from './refs.js';
 import serviceImage from './apiService.js';
 import updateImageMarkup from './updateMarkup.js';
-
 import { noImagesMessage, noMoreImagesMessage } from './notifications.js';
+
 
 refs.searchForm.addEventListener('submit', event => {
     event.preventDefault();
@@ -14,7 +14,7 @@ refs.searchForm.addEventListener('submit', event => {
 
     refs.loadBtn.disabled = true;
 
-    refs.loadBtn.classList.add('is-hidden');
+    refs.loadBtn.classList.remove('is-hidden');
     refs.searchForm.reset();
     refs.gallery.innerHTML = '';
     serviceImage.resetPage();
@@ -43,7 +43,7 @@ refs.loadBtn.addEventListener('click', () => {
             return;
         }
         updateImageMarkup(hits);
-        refs.loadBtn.classList.remove('is-hidden');
+        refs.loadBtn.classList.add('is-hidden');
         scrollingWindow();
     });
 });
