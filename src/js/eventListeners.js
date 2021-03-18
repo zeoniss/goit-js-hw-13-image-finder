@@ -12,6 +12,7 @@ refs.searchForm.addEventListener('submit', event => {
         return;
     }
 
+    refs.loadBtn.disabled = true;
 
     refs.loadBtn.classList.add('is-hidden');
     refs.searchForm.reset();
@@ -23,6 +24,7 @@ refs.searchForm.addEventListener('submit', event => {
             return;
         }
         updateImageMarkup(hits);
+        refs.loadBtn.disabled = false;
         refs.loadBtn.classList.remove('is-hidden');
         scrollingWindow();
     });
