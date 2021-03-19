@@ -11,9 +11,6 @@ refs.searchForm.addEventListener('submit', event => {
         refs.gallery.innerHTML = '';
         return;
     }
-
-    refs.loadBtn.disabled = true;
-
     refs.loadBtn.classList.remove('is-hidden');
     refs.searchForm.reset();
     refs.gallery.innerHTML = '';
@@ -36,10 +33,10 @@ function scrollingWindow() {
         behavior: 'smooth',
     });
 }
-refs.input.addEventListener('keydown', hideBtn)
+refs.input.addEventListener('keydown', unactivateBtn)
 
-function hideBtn() {
-    refs.loadBtn.classList.add('is-hidden');
+function unactivateBtn() {
+    refs.loadBtn.disabled = true;
 
 }
 refs.loadBtn.addEventListener('click', () => {
@@ -49,6 +46,7 @@ refs.loadBtn.addEventListener('click', () => {
             return;
         }
         updateImageMarkup(hits);
+
         refs.loadBtn.classList.remove('is-hidden');
         scrollingWindow();
     });
