@@ -36,6 +36,12 @@ function scrollingWindow() {
         behavior: 'smooth',
     });
 }
+refs.input.addEventListener('keydown', hideBtn)
+
+function hideBtn() {
+    refs.loadBtn.classList.add('is-hidden');
+
+}
 refs.loadBtn.addEventListener('click', () => {
     serviceImage.fetchImage().then(hits => {
         if (hits.length === 0) {
@@ -43,7 +49,7 @@ refs.loadBtn.addEventListener('click', () => {
             return;
         }
         updateImageMarkup(hits);
-        refs.loadBtn.classList.add('is-hidden');
+        refs.loadBtn.classList.remove('is-hidden');
         scrollingWindow();
     });
 });
